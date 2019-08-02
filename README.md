@@ -1,10 +1,7 @@
-Square Open Source Portal
+Modifying the Square Open Source Portal
 =========================
 
-[![Build Status](https://travis-ci.org/square/square.github.io.svg?branch=master)](https://travis-ci.org/square/square.github.io)
-
-A simple, static portal which outlines our open source offerings. Intentionally
-themed to look like a Square merchant page on the directory.
+Here, I've forked the Square Open Source Portal [https://square.github.io/](https://square.github.io/) and am modifying it to showcase some of my projects.
 
 
 Development

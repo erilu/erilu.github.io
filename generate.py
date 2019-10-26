@@ -8,7 +8,7 @@ import pystache
 import requests
 import time
 import netrc
-from pygithub3 import Github
+from github import Github
 
 repos_in = 'repos.json'
 index_in = 'index.mustache'
@@ -17,7 +17,7 @@ index_out = 'index.html'
 auth = netrc.netrc()
 try:
   (login, _, password) = auth.authenticators('api.github.com')
-  ghclient = Github(login=login, password=password)
+  ghclient = Github(password)
   logged_in = True
 except:
   ghclient = Github()
@@ -26,12 +26,12 @@ except:
 def gh_repo(name):
   print('Fetching "%s" repo information...' % name)
   # Use the following for development so you do not hammer the GitHub API.
-  #return {'name': name, 'html_url': 'http://google.com', 'homepage': 'http://example.com', 'description': 'Description!'}
+  # return {'name': name, 'html_url': 'http://google.com', 'homepage': 'http://example.com', 'description': 'Description!'}
 
   if not logged_in:
     time.sleep(2.0) # Take a nap so GitHub doesn't aggressively throttle us.
 
-  repo = ghclient.repos.get(user='erilu', repo=name)
+  repo = ghclient.get_repo('erilu/'+name)
   return dict(
     name=repo.name,
     homepage=repo.homepage,

@@ -31,7 +31,7 @@ def gh_repo(name):
   if not logged_in:
     time.sleep(2.0) # Take a nap so GitHub doesn't aggressively throttle us.
 
-  repo = ghclient.repos.get(user='square', repo=name)
+  repo = ghclient.repos.get(user='erilu', repo=name)
   return dict(
     name=repo.name,
     homepage=repo.homepage,
@@ -45,7 +45,7 @@ with codecs.open(repos_in, 'r', 'utf-8') as f:
   repo_config = json.loads(f.read())
 
 repos = repo_config['repos']
-custom = repo_config['custom']
+# custom = repo_config['custom']
 
 # Multimap of categories to their repos.
 categories = defaultdict(list)
@@ -60,12 +60,12 @@ for repo in repos.keys():
     categories[repo_cat].append(repo_data)
 
 # Loop though custom repos adding their data (faked to look like GitHub's) to the specified categories.
-for repo_data in custom:
-  repo_cats = repo_data['categories']
-  if repo_cats is None:
-    repo_cats = ['Other']
-  for repo_cat in repo_cats:
-    categories[repo_cat].append(repo_data)
+# for repo_data in custom:
+#   repo_cats = repo_data['categories']
+#   if repo_cats is None:
+#     repo_cats = ['Other']
+#   for repo_cat in repo_cats:
+#     categories[repo_cat].append(repo_data)
 
 
 # Template context that will be used for rendering.

@@ -85,7 +85,7 @@ for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is n
   }
 
   # Loop over category repos sorted alphabetically (case-insensitive).
-  for repo_data in sorted(categories[category_name], key=lambda s: s['name'].lower()):
+  for repo_data in categories[category_name]:
     name = repo_data['name']
     repo = {
       'name': name,

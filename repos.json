@@ -1,11 +1,15 @@
 {
   "repos": {
+    "single-cell-rnaseq-analysis":["Bioinformatics"],
+    "bulk-rnaseq-analysis":["Bioinformatics"],
+    "python-fastq-downloader":["Bioinformatics"],
+    "dendritic-cell-bulk-rnaseq":["Bioinformatics"],
+    "cell-line-transcriptome-analysis":["Bioinformatics"],
+    "pubmed-abstract-compiler":["Bioinformatics"],
+    "gene-expression-databases":["Bioinformatics"],
     "IHC-image-pixel-analyzer":["Data Analysis"],
-    "R-for-data-science-walkthrough":["Data Science Practice"],
-    "Complete-RNA-seq-Pipeline-Transcriptome-Analysis":["Bioinformatics"],
-    "R-Cell-Line-Transcriptome-Analysis":["Bioinformatics"],
-    "Pubmed-Abstract-Compiler":["Web scraping"],
-    "Web-Scraping-NBA-Statistics-Using-Python":["Web scraping"],
+    "R-for-data-science-walkthrough":["Data Analysis"],
+    "Web-Scraping-NBA-Statistics-Using-Python":["Data Analysis"],
     "Time-Series-Modeling-of-Publication-Rates":["Data Analysis"],
     "Use-Machine-Learning-Techniques-to-Predict-College-Enrollment-Rates":["Data Analysis"]
     }

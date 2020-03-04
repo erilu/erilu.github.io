@@ -14,13 +14,18 @@
       <div class="profile">
         <section class="profile-masthead" id="masthead">
           <header class="profile-logo">
+            <div class="profile-logo-image">
+              <img alt="n Source " src="/images/profile_picture.jpg" />
+            </div>
             <div class="profile-name">
               <h1>Erick Lu</h1>
             </div>
           </header>
           <aside class="profile-summary">
             <div class="summary-location summary-module">
-              <a href="http://github.com/erilu">github.com/erilu</a>
+              <a href="http://github.com/erilu">GitHub</a>
+              <a href="https://www.linkedin.com/in/ericklu/">LinkedIn</a>
+              <a href="https://www.ncbi.nlm.nih.gov/myncbi/1xMd7Z6yj2gAz/bibliography/public/">List of Publications</a>
             </div>
           </aside>
         </section>
@@ -29,25 +34,26 @@
           <!-- TODO header? -->
 
           <div class="profile-description">
-            <p>Work in progress - currently modifying the square open source portal.</p>
+            <p>As a bioinformaticist, I wrote the guides below to help other scientists analyze RNA-sequencing data. I also showcase some of my personal data analysis projects.</p>
           </div>
 
           <article class="profile-menu" id="menu">
             <nav class="menu-navigation">
               <ul class="menu-navigation-list">
-                <li class="menu-navigation-list-item"><a href="#bioinformatics">Bioinformatics</a></li>
-                <li class="menu-navigation-list-item"><a href="#data analysis">Data Analysis</a></li>
+                <li class="menu-navigation-list-item"><a href="#rna-seq analysis guides">RNA-seq analysis guides</a></li>
+                <li class="menu-navigation-list-item"><a href="#bioinformatics projects">Bioinformatics projects</a></li>
+                <li class="menu-navigation-list-item"><a href="#data analysis projects">Data analysis projects</a></li>
               </ul>
             </nav>
 
-            <div id="bioinformatics" class="menu-category">
-              <h3 class="menu-category-name">Bioinformatics</h3>
+            <div id="rna-seq analysis guides" class="menu-category">
+              <h3 class="menu-category-name">RNA-seq analysis guides</h3>
               <ol class="menu-category-list">
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">single-cell-rnaseq-analysis</h4>
                   <span class="menu-item-price"><a href="https://erilu.github.io/single-cell-rnaseq-analysis/" target="_blank">Website</a> &middot; <a href="https://github.com/erilu/single-cell-rnaseq-analysis" target="_blank">GitHub</a></span>
-                  <p class="menu-item-description">Analyze single cell RNA-seq data using the R package Seurat. Go from raw data to cell clustering, identifying cell types, custom visualizations, and group-wise analysis of tumor infiltrating immune cells using data from Ishizuka et al. Nature 2019.</p>
+                  <p class="menu-item-description">A guide for analyzing single-cell RNA-seq data using the R package Seurat. Go from raw data to cell clustering, identifying cell types, custom visualizations, and group-wise analysis of tumor infiltrating immune cells using data from Ishizuka et al. Nature 2019.</p>
                 </div>
               </li>
               <li class="menu-item">
@@ -61,9 +67,14 @@
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">python-fastq-downloader</h4>
                   <span class="menu-item-price"><a href="https://erilu.github.io/python-fastq-downloader/" target="_blank">Website</a> &middot; <a href="https://github.com/erilu/python-fastq-downloader" target="_blank">GitHub</a></span>
-                  <p class="menu-item-description">Batch download raw sequencing data using a python script and the NCBI SRA toolkit. A guide on how to find sequencing data in GEO and use sra-tools prefetch and fastq-dump.</p>
+                  <p class="menu-item-description">A guide on how to find and download raw RNA-seq data from GEO. Batch download FASTQ files using a Python script and the NCBI SRA tools prefetch and fastq-dump.</p>
                 </div>
               </li>
+              </ol>
+            </div>
+            <div id="bioinformatics projects" class="menu-category">
+              <h3 class="menu-category-name">Bioinformatics projects</h3>
+              <ol class="menu-category-list">
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">dendritic-cell-bulk-rnaseq</h4>
@@ -94,8 +105,8 @@
               </li>
               </ol>
             </div>
-            <div id="data analysis" class="menu-category">
-              <h3 class="menu-category-name">Data Analysis</h3>
+            <div id="data analysis projects" class="menu-category">
+              <h3 class="menu-category-name">Data analysis projects</h3>
               <ol class="menu-category-list">
               <li class="menu-item">
                 <div class="menu-item-info">
@@ -151,7 +162,7 @@
           <li class="footer-navigation-item"><a href="https://www.linkedin.com/in/ericklu/">LinkedIn</a></li>
 
         </ul>
-        <p class="copyright">Design adapted from <a href="http://square.github.io">Square, Inc</a>. &copy; 2009–2015.</p>
+        <p class="copyright">Design adapted from the <a href="http://square.github.io">Square Open Source Portal</a> by Square, Inc.</p>
 
       </nav>
     </footer>

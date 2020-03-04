@@ -1,16 +1,16 @@
 {
   "repos": {
-    "single-cell-rnaseq-analysis":["Bioinformatics"],
-    "bulk-rnaseq-analysis":["Bioinformatics"],
-    "python-fastq-downloader":["Bioinformatics"],
-    "dendritic-cell-bulk-rnaseq":["Bioinformatics"],
-    "cell-line-transcriptome-analysis":["Bioinformatics"],
-    "pubmed-abstract-compiler":["Bioinformatics"],
-    "gene-expression-databases":["Bioinformatics"],
-    "IHC-image-pixel-analyzer":["Data Analysis"],
-    "R-for-data-science-walkthrough":["Data Analysis"],
-    "Web-Scraping-NBA-Statistics-Using-Python":["Data Analysis"],
-    "Time-Series-Modeling-of-Publication-Rates":["Data Analysis"],
-    "Use-Machine-Learning-Techniques-to-Predict-College-Enrollment-Rates":["Data Analysis"]
+    "single-cell-rnaseq-analysis":["RNA-seq analysis guides"],
+    "bulk-rnaseq-analysis":["RNA-seq analysis guides"],
+    "python-fastq-downloader":["RNA-seq analysis guides"],
+    "dendritic-cell-bulk-rnaseq":["Bioinformatics projects"],
+    "cell-line-transcriptome-analysis":["Bioinformatics projects"],
+    "pubmed-abstract-compiler":["Bioinformatics projects"],
+    "gene-expression-databases":["Bioinformatics projects"],
+    "IHC-image-pixel-analyzer":["Data analysis projects"],
+    "R-for-data-science-walkthrough":["Data analysis projects"],
+    "web-scraping-NBA-statistics":["Data analysis projects"],
+    "cancer-publication-time-series":["Data analysis projects"],
+    "predict-college-enrollment":["Data analysis projects"]
     }
 }
